@@ -109,8 +109,7 @@ p {
 .aboutme {
   background-color: #1F69C9;
   height: 450px;
-  margin-bottom: 100px;
-
+  overflow: hidden;
 }
 .card-2 {
   height: 450px;
@@ -137,6 +136,7 @@ p {
 .contactme {
   background-color: #33BBE6;
   height: 252px;
+  overflow: hidden;
 }
 .card-3 {
   list-style: none;
