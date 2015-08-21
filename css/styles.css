@@ -30,6 +30,7 @@ p {
 }
 .main-background {
 	background-image: url('../images/ltracks.png')
+
 }
 
 .full-width-image {
@@ -109,27 +110,27 @@ p {
 .aboutme {
   background-color: #1F69C9;
   height: 450px;
-  overflow: hidden;
+  
 }
 .card-2 {
   height: 450px;
   list-style: none;
-  margin-bottom: 20px;
   overflow: hidden;
 }
-.card-2-content {
-    padding-bottom: 0px;
+ .aboutme-content {
+  padding:0 0 200px;
+  display: inline-block;
 }
+
 .card-2-content h3 {
   font-size:22px;
   font-weight:normal;
-  margin-bottom: 20px;
   color:#ffffff;
+  margin-bottom: 10px;
 }
 .card-2-content p {
   font-size: 14px;
   color: #ffffff;
-  margin-bottom: 0px;
 }
 
 /* CONTACT */
@@ -137,6 +138,12 @@ p {
   background-color: #33BBE6;
   height: 252px;
   overflow: hidden;
+}
+.contactme a {
+  font-size: 9px;
+  color: #ffffff;
+  text-decoration: none;
+
 }
 .card-3 {
   list-style: none;
@@ -151,7 +158,7 @@ p {
   color: #FFFFFF;
   font-size: 18px;
   line-height: 0px;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 /* FOOTER */
@@ -184,6 +191,7 @@ footer h2 {
 }
 .case-studies {
   margin-top: 80px;
+  padding-right: 20px;
 }
 .title {
   margin-top: 100px;
@@ -191,6 +199,7 @@ footer h2 {
 .content-space {
   margin-top: 100px;
   padding-left: 10px;
+
   
 }
 .card-5 h3 {
@@ -217,6 +226,7 @@ footer h2 {
 }
 .next-previous {
   color:#9B9B9B;
+  padding-right: 30px;
  }
  .next-previous nav {
   padding:4em 0;
@@ -225,7 +235,7 @@ footer h2 {
    text-align: center;
    float:center;
    overflow: hidden;
-   margin:0px auto;
+   margin:20px auto;
    width: 580px;
  }
  .next-previous nav ul > li {
@@ -236,8 +246,8 @@ footer h2 {
  .next-previous nav ul > li > a {
    text-decoration: none;
    color: #9B9B9B;
-}
-
+ }
+ 
 
 /* PAYCRAVE */
 .imagetitle {
@@ -249,6 +259,12 @@ footer h2 {
   color: #A9ACB2;
  }
 .paycrave-main-images {
+  padding-left: 40px;
+  display: block;
+  float: center;
+  margin-top: 10px;
+}
+.paycrave-main-images-wire {
   padding-left: 40px;
   display: block;
   float: center;
