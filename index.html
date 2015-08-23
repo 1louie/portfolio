@@ -8,30 +8,34 @@
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/skeleton.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <!--script>
+      $(window).on("load",function() {
+      function fade() {
+        $('.fade-in-element').each(function() {
+        /* Check the location of each desired element */
+          var objectBottom = $(this).offset().top + $(this).outerHeight();
+          var windowBottom = $(window).scrollTop() + $(window).innerHeight();
 
-  <script type="text/javascript" src="autoScrollTo.js">
-  var scrolly = 0;
-  var distance = 40;
-  var speed -24;
-  function autoScrollTo(el) {
-    var currentY = window.pageYOffeset;
-    var targetY = document.getElementById(el).offsetTop;
-    var bodyHeight = document.body.offsetHeight;
-    var yPos = currentY + window.innerHeight;
-    var animator = setTimeout ('autoScrollTo(\''+el+'\')',24);
-    if(yPos > bodyHeight) {
-      clearTimeout(animator);
-    } else {
-      if (currentY < targetY-distance) {
-        scrolly = currentY+distance;
-        window.csroll(0, scrolly);
-      } else {
-        clearTimeout(animator);
-      }
+        /* If the object is completely visible in the window, fade it in */
+        if (objectBottom < windowBottom) {
+          if ($(this).css('opacity')==0) {$(this).fadeTo(500,1);}
+          } else {
+        if ($(this).css('opacity')==1) {$(this).fadeTo(500,0);}
+          }
+      });
     }
-  }
-  </script>
-  </head>
+        fade(); //Fade in completely visible elements during page-load
+          $(window).scroll(function() {fade();}); //Fade in elements during scroll
+});
+  </script>-->
+  <script src="http://mynameismatthieu.com/WOW/dist/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+
+      </head>
   <body>
     <section class="main-section main-background">
         <div class="container">
@@ -42,87 +46,82 @@
                         <li><a href="#samples">PROJECTS</a></li>
                         <li><a href="#me">ABOUT</a></li>
                         <li><a href="#contact">CONTACT</a></li>
-                      
                     </ul>
-              </nav>
-            <div class="page section">
-              <img src="images/logo-cyan.png" height="100px" class="logo" />
+                </nav>
+            <div class="page section wow zoomIn">
+                <img src="images/logo-cyan.png" height="100px" class="logo" />
                 <h2 class="author-name name">JOSE LUIS REYES</h2>
-                <h3 class="title">UX/UI DESIGNER</h3>
+                  <h3 class="title">UX/UI DESIGNER</h3>
             </div>
         </header>
-        <div class="my-samples">
-          <ul>
-                <li class="blocbox card row">
-                    <div class="blockbox-logo one-half column">
-                      <img src="images/blocbox.png" class="full-width-image" />
-                </div>
-                  <div class="blocbox-content card-content card-content-right one-half column">
-                      <p>Blocbox was my first follow-exercise project as a UX design apprentice for BLOC. It’s a Software as a Service (SaaS) that allows people to collect information and store it in a single place and can be edited and shared with your peers.</p>
-                      <a href="file:///Users/joseluisreyes/Documents/Github/portfolio/blocbox.html">VIEW CASE STUDY</a>
-                  </div>
-              </li>
-            
-            <li class="paycarve card row">
-              <div class="paycrave-content card-content card-content-left one-half column">
-                <h3 class="paycrave-title"></h3>
-                  <p>Paycrave is an assigned UX/UI project mobile application that allows users to find food trucks near them, view menus, select items for purchase, and checkout.</p>
-                <a href="file:///Users/joseluisreyes/Documents/Github/portfolio/paycrave.html">VIEW CASE STUDY</a>
-              </div>
-              <div class="paycrave-logo one-half column">
-                <img src="images/paycrave.png" class="full-width-image" />
-              </div>
-            </li>
-          <a name="samples"></a>
-          <li class="thepelican card row">
-                        <div class="thepelican-logo one-half column">
-                        <img src="images/thepelican.png"class="full-width-image"/>
+    <div class="hide-me">
+        <li class="blocbox fade-in-element row">
+            <div class="blockbox-logo wow fadeInLeft one-half column">
+                <img src="images/blocbox.png" class="full-width-image" />
             </div>
-                <div class="thepelican-content card-content card-content-right one-half column">
-                    <p>The Pelican is a mockup UX/UI application for people to crowdfund donations for charities and foundations, and allow people to donate to specific causes.</p>
-                    <a href="file:///Users/joseluisreyes/Documents/Github/portfolio/thepelican.html">VIEW CASE STUDY</a>
+                <div class="card-content wow fadeInRight card-content-right one-half column">
+                    <p>Blocbox is my first follow-exercise project as a UX design apprentice for BLOC. It’s a Software as a Service (SaaS) that allows collection and storage of information in a single place. These can be edited and shared with your peers as well.</p>
+                    <a href="http://1louie.github.io/portfolio/blocbox.html">VIEW CASE STUDY</a>
                 </div>
             </li>
+          </div>
 
-            <li class="aleksmilo card row">
-                <div class="aleksmilo-content card-content card-content-left one-half column">
-                    <h3 class="aleksmilo-title"></h3>
-                        <p>Aleks & Milo is an assigned UX/UI project for an ecommerce fashion store designed for an elegant shopping experience that can also work for mobile devices.</p>
-                    <a href="file:///Users/joseluisreyes/Documents/Github/portfolio/aleksmilo.html">VIEW CASE STUDY</a>
+        <li class="paycrave fade-in-element row">
+          <div class="card-content wow fadeInLeft card-content-left one-half column">
+                  <h3 class="paycrave-title"></h3>
+                  <p>Paycrave is an assigned UX/UI project mobile application that lets foodies find food trucks in their area, view menus, select items, and make purchases.</p>
+                <a href="http://1louie.github.io/portfolio/paycrave.html">VIEW CASE STUDY</a>
+              </div>
+            <div class="paycrave-logo wow fadeInRight one-half column">
+            <img src="images/paycrave.png" class="full-width-image" />
+          </div>
+        </li>
+<a name="samples"></a>
+        <li class="thepelican fade-in-element row">
+            <div class="thepelican-logo wow fadeInLeft one-half column">
+              <img src="images/thepelican.png"class="full-width-image"/>
+            </div>
+                <div class="card-content wow fadeInRight card-content-right one-half column">
+                    <p>The Pelican is a mockup UX/UI application that enables people to donate to specific causes as well as to crowdfund donations for pet charities and foundations.</p>
+                    <a href="http://1louie.github.io/portfolio/thepelican.html">VIEW CASE STUDY</a>
+                    </div>
+                </li>
+          <li class="aleksmilo fade-in-element row">
+              <div class="card-content wow fadeInLeft card-content-left one-half column">
+                   <p>Aleks & Milo is an assigned UX/UI project for an ecommerce fashion store geared towards a high-end shopping experience.  Users can also browse this site on their mobile devices.</p>
+                    <a href="http://1louie.github.io/portfolio/aleksmilo.html">VIEW CASE STUDY</a>
                 </div>
-                <div class="aleksmilo-logo one-half column">
+                <div class="aleksmilo-logo wow fadeInRight one-half column">
               <img src="images/aleksmilo.png" class="full-width-image"/>
             </div>
-           </li>
-          </ul>
-         </div>
+          </li>
+        </div>
       </div>
-    </section>
-    <section class="aboutme">
+     </section>
+    
+<section class="aboutme">
     <a name="me"></a>
     <div class="container">
       <ul>
         <li class="aboutme card-2 row">
-            <div class="my-picture one-half column">
+            <div class="wow fadeInLeft one-half column">
                 <img src="images/mypicture.jpg" class="full-width-image" />
-                </div>
-        <div class="card-2-content aboutme-content one-half column">
-          <h3 class="about-me title">ABOUT ME</h3>
-            <p>Hello Friends! I’m Jose Luis Reyes, I just finished my Bloc UX/UI apprenticeship projects and I am based in Chicago. I am currently working outside the circles of the web industry and I would like to get onboard to achieve my long-term goals of becoming a Web Designer. I enjoy designing a lot and had print design experiences in the past. My goal is to keep learning new web-related technologies and design trends and apply these into simple and informative design interfaces. I also enjoy creating simple, elegant, classic, contemporary designs and balance these aesthetics with functionality.</p>
-
-            <p>If you like my works, I can certainly be available for tea. To view more of my experiences, you click on my resume.</p>
-        </div>
-      </li>
+            </div>
+        <div class="card-2-content wow fadeInRight one-half column">
+            <h3 class="about-me title">ABOUT ME</h3>
+            <p>Hello, I’m Jose Luis Reyes and I just finished my Bloc UX/UI apprenticeship projects.  I am currently working on the fringes of the web industry and would like to get my foot in to achieve my long-term goal of becoming a Web Designer. I enjoy designing and have had print design experiences in the past. I’m always interested in learning new web-related technology and design trends and applying these to simple but informative design interfaces. I also enjoy creating elegant, classic, yet contemporary designs and balance these aesthetics with functionality.</p><p>If you like my stuff, I’m certainly available for a chat. For more of my work experiences, please click on my resume.</p>
+          </div>
+        </li>
     </ul>
-    </div>
   </div>
+  
 </section>
 <section class="contactme">
-  <div class="contactme container">
+  <div class="contactme wow pulse container">
   <a name="contact"></a>
     <ul>
       <li class="contact-me card-3 row">
-        <h3 class="contact-me title">PASS ME A MESSAGE</h3>
+        <h3 class="contact-me title">GET IN TOUCH</h3>
         <p>4700 S Lake Park Avenue, Apt# 804  Chicago, IL 60615</p>
            <p>1(773)-225-0939</p>
            <p>jlpreyes11@yahoo.com</p>
