@@ -137,6 +137,13 @@ p {
   font-weight:normal;
   color:#ffffff;
 
+
+}
+.my-pic {
+  width: 80%;
+  float: left;
+  padding-left: 50px;
+  
 }
 
 .card-2-content p {
