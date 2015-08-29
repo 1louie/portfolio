@@ -11,6 +11,7 @@ a {
   font-family: DIN-medium;
   font-size: 12px;
   letter-spacing: 1px;
+  text-decoration: none;
 }
 h2 {
   font-size:28px;
@@ -72,6 +73,7 @@ p {
   display: block;
   float: center;
   margin:3em auto 0;
+
  }
  .topbar-header h2 {
  	font-size:24px;
@@ -94,6 +96,8 @@ p {
  	margin:80px 0 120px;
  }
 
+ 
+
 /* PROJECTS */
 
 
@@ -110,22 +114,37 @@ p {
     background-color: #ffffff;
     padding: 160px 0px 0px 0px;
     opacity: 30%;
-
+}
+.card-content-left {
+    padding-left: 40px;
+ }
+ .card-content-right {
+    padding-right: 30px;
 }
 
+
+/* HOVER */
+a:link { color: #9B9B9B; text-decoration: none }
+a:active { color: red; text-decoration: none }
+a:visited { color: #33BBE6; text-decoration: none }
+a:hover { color: #207DD1; text-decoration: none }
 
 .card-3  a:link { color: #9B9B9B; text-decoration: none }
 .card-3  a:active { color: red; text-decoration: none }
 .card-3  a:visited { color: #FFFFFF; text-decoration: none }
 .card-3  a:hover { text-decoration: underline }
 
+.topbar-header nav ul > li > a:link { color: #9B9B9B; text-decoration: none }
+.topbar-header nav ul > li > a:active { color: red; text-decoration: none }
+.topbar-header nav ul > li > a:visited { color: #9B9B9B; text-decoration: none }
+.topbar-header nav ul > li > a:hover { color:#33BBE6; }
 
- .card-content-left {
-    padding-left: 40px;
- }
- .card-content-right {
-    padding-right: 30px;
-}
+.next-previous nav ul > li > a:link { color: #9B9B9B; text-decoration: none }
+.next-previous nav ul > li > a:active { color: red; text-decoration: none }
+.next-previous nav ul > li > a:visited { color: #9B9B9B; text-decoration: none }
+.next-previous nav ul > li > a:hover { color:#33BBE6; }
+
+
 
 
 /* ABOUT ME */
@@ -160,12 +179,12 @@ p {
   padding-left: 0px;
 
 }
-
 .card-2-content p {
   font-size: 12px;
   color: #ffffff;
   line-height: 28px;
 }
+
 
 /* CONTACT */
 .contactme {
@@ -313,6 +332,21 @@ footer h2 {
   display: block;
   float: center;
   margin-top: 10px;
+  margin-bottom: 450px;
+}
+.paycrave-main-images-flow {
+  padding-left: 80px;
+  display: block;
+  float: center;
+  margin-top: 10px;
+  margin-bottom: 450px;
+}
+
+.aleksmilo-main-images {
+  padding-left: 40px;
+  display: block;
+  float: center;
+  margin-top: 10px;
 }
 .thepelican-main-images {
   padding-left: 40px;
@@ -320,14 +354,31 @@ footer h2 {
   float: center;
   margin-top: 10px;
 }
-.aleksmilo-main-images {
-  padding-left: 40px;
+
+.aleksmilo-images {
+  margin-top: 100px;
   display: block;
-  float: center;
-  margin-top: 10px;
+  margin-left: 30px;
+}
+.paycrave-images {
+  margin-top: 100px;
+  display: block;
+  margin-left: 30px;
+}
+.thepelican-images {
+  margin-top: 100px;
+  display: block;
+  margin-left: 30px;
 }
 
 
-
-
+.paycrave-main-images-wire { width:190px;
+       height:190px; opacity: 1;
+       filter: alpha(opacity=100);
+       
+       } .paycrave-main-images-wire:hover {
+        opacity: 0.8;
+        filter: alpha(opacity=80);
+        } - See more at: http://www.corelangs.com/css/box/hover.html#sthash.IFvi66cA.dpuf
+      }
 
