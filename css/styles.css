@@ -5,6 +5,14 @@ body {
 	font-family: "DIN", Helvetica, Arial, sans-serif;
   background-color: #f5f5f5;
 }
+.wrap {
+  width: 1400px;
+  margin: 0 auto;
+}
+.wrap-projects {
+  width: 1400px;
+  margin: 0 auto;
+}
 h1,h2, h3, h4, h5, h6 {
 	font-family: "DIN", Helvetica, Arial, sans-serif;
 }
@@ -48,8 +56,13 @@ p {
 
 .full-width-image {
   width: 80%;
-  margin-left: 45px;
-  margin-top: 25px;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+.full-width-image1 {
+  width: 80%;
+  margin-left: 92px;
+  margin-top: 0px;
 
 
 }
@@ -81,11 +94,13 @@ p {
  }
  .topbar-header .logo  {
   display: inline-block;
+  margin-left: 450px;
+}
+
+.topbar-header .logo1  {
+  display: inline-block;
   margin-left: 445px;
-  
-
-
- }
+}
  .topbar-header h2 {
  	font-size:24px;
  	letter-spacing: 2px;
@@ -115,7 +130,8 @@ p {
 
  .fade-in-element {
   background-color: #e8e8e8;
-  height: 420px;
+  height: 365px;
+  width: 960px;
   list-style: none;
   margin-bottom: 75px;
   overflow: hidden;
@@ -123,13 +139,34 @@ p {
 
  .card-content {
     background-color: #e8e8e8;
-    padding: 145px 0px 0px 0px;
+    padding: 110px 0px 0px 0px;
+
+}
+.card-content p {
+  margin-left: 60px;
+    width: 360px;
+
+}
+.card-content a {
+  margin-left: 60px;
 }
 .card-content-left {
-    padding-left: 50px;
+    padding-left: 40px;
+    width: 30px;
  }
  .card-content-right {
-    padding-right: 50px;
+    padding-right: 30px;
+}
+.card-content1 p {
+  margin-left: 0px;
+    width: 360px;
+  }
+  .card-content1 a {
+  margin-left: 0px;
+  }
+  .card-content1 {
+    padding: 110px 0px 0px 0px;
+
 }
 
 
@@ -160,35 +197,36 @@ a:hover { color: #207DD1; text-decoration: none }
 /* ABOUT ME */
 .aboutme {
   background-color: #e8e8e8;
-  height: 450px;
+  height: 400px;
 }
 .card-2 {
   list-style: none;
   overflow: hidden;
+  margin-bottom: 60px;
 }
 .card-2-content  {
-  padding-bottom: 450px;
-  padding-right: 60px;
-  padding-left: 10;
+  
+  width: 80px;
 }
 
 .card-2-content h3 {
   font-size:22px;
   font-weight:normal;
   color:#A9ACB2;
-  margin-bottom: 20px;
+  
 }
 
 .my-pic {
-  width: 50%;
-  margin-left: 200px;
-  margin-top: 22px;
+  width: 45%;
+  margin-left: 230px;
+  margin-top: 16px;
 
 }
 .card-2-content p {
-  font-size: 12px;
+  font-size: 14px;
   color: #A9ACB2;
-  line-height: 22px;
+  line-height: 20px;
+  width: 410px;
 }
 
 
@@ -239,7 +277,7 @@ footer {
 .ref-logos {
   width: 300px;
   text-align: center;
-  margin-left: 300px;
+  margin-left: 400px;
 
 }
 .ref-logos .box1{
@@ -260,7 +298,7 @@ footer {
 .foot-logo {
   
   float: right;
-  margin: 35px 380px 0 0;
+  margin: 35px 450px 0 0;
   height: 37px;
   width: 300px;
 }
@@ -268,13 +306,14 @@ footer {
 .foot-logo1 {
   
   float: right;
-  margin: 35px 450px 0 0;
+  margin: 35px 550px 0 0;
   height: 37px;
   width: 300px;
  
 }
 .foot-logo .box {
   width: 30px;
+  margin-left: 20px;
   overflow: hidden;
 }
 footer h2 {
@@ -283,7 +322,7 @@ footer h2 {
   text-align: center;
   color: #E1E1E1;
   margin: 10px 10px 10px 0;
-  letter-spacing: 1px;
+  letter-spacing: 0px;
   float: right;
 }
 
@@ -334,7 +373,7 @@ footer h2 {
   padding-right: 40px;
 }
 .main-images {
-  padding-left: 40px;
+  padding-left: 30px;
   display: block;
   float: center;
 }
